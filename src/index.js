@@ -20,7 +20,7 @@ fetchBreeds()
     selectForm.innerHTML = createList(data)
     new SlimSelect({
         select: '#single'
-    })
+    });
 })
 .catch(() => {
     Notiflix.Notify.failure('Oops! Something went wrong! Try reloading the page!')
